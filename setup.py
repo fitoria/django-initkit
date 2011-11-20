@@ -12,7 +12,7 @@ setup(
     author_email = 'adolfo.fitoria@gmail.com',
     description = 'A personalized django startproject command',
     packages = find_packages(),
-    scripts = ['initkit/django-initkit.py'],
+    scripts = ['initkit/django_initkit.py'],
     classifiers = [
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',

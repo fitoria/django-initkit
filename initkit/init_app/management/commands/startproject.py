@@ -1,6 +1,6 @@
 from django.core.management.base import CommandError, LabelCommand
 from django.utils.importlib import import_module
-import django_initkit
+import initkit
 import os
 import sys
 import re
@@ -66,7 +66,7 @@ def copy_helper(style, app_or_project, name, directory):
     except OSError, e:
         raise CommandError(e)
 
-    template_dir = os.path.join(django_initkit.__path__[0], 'templates', '%s_template' % app_or_project)
+    template_dir = os.path.join(initkit.__path__[0], 'templates', '%s_template' % app_or_project)
 
     for d, subdirs, files in os.walk(template_dir):
         relative_dir = d[len(template_dir)+1:].replace('%s_name' % app_or_project, name)
