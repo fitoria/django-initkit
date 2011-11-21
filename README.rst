@@ -23,8 +23,14 @@ django_initkit.py startproject foo
 
 django_initkit.py can be used as django-admin.py just that startproject is modified.
 
+Roadmap
+=======
 
+* support for more than one project template.
+
+========
 Español:
+========
 
 Simplemente es el comando startproject de Django mejorado con una plantilla a la medida
 que se usa mucho, la plantilla implementa la separación del settings_local y más.
@@ -34,15 +40,14 @@ Instalación
 
 python setup.py install
 
+o
+
+pip install django-initkit
+
 
 Uso
 ===
 
 django_initkit.py startproject foo
 
-o
-
-pip install django-initkit
-
 django_initkit.py puede ser usado como django-admin.py solo que startproject está modificado.
-
